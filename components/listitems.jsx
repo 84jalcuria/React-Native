@@ -11,7 +11,6 @@ const ListItems = ({
 	sparklineIn7dPrice,
 	onPress,
 }) => {
-	console.log(name);
 	return (
 		<TouchableOpacity
 			onPress={() =>

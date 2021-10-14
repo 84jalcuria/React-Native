@@ -9,7 +9,6 @@ export const NetInfoProvider = (props) => {
 	useEffect(() => {
 		const removeNetInfoSubscription = NetInfo.addEventListener((state) => {
 			const offLine = !(state.isConnected && state.isInternetReachable);
-			console.log(offLine);
 			setIsOffLine(offLine);
 		});
 		return () => {

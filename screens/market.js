@@ -16,7 +16,7 @@ import {
 } from "react-native";
 import ListItems from "../components/listitems";
 import Chart from "../components/chart";
-import { useMarketPrice } from "../hooks/userMarketPrice";
+import { useMarketPrice } from "../hooks/useMarketPrice";
 import {
 	BottomSheetModal,
 	BottomSheetModalProvider,
@@ -28,7 +28,7 @@ const Market = () => {
 	const [page, setPage] = useState(1);
 	const {
 		data: responseData,
-		loading: loadingData,
+		//loading: loadingData,
 		responseError,
 	} = useMarketPrice(10, page);
 	const [data, setData] = useState([]);

@@ -22,6 +22,5 @@ const styles = StyleSheet.create({
 		flex: 1,
 		backgroundColor: "#fff",
 		marginTop: StatusBar.currentHeight,
-		//paddingHorizontal: 20,
 	},
 });
